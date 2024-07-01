@@ -11,10 +11,10 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer"];
   const period = 2000;
 
   const tick = useCallback(() => {
+    const toRotate = ["Web Developer", "Web Designer"];
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting
@@ -39,7 +39,7 @@ export const Banner = () => {
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }
-  }, [isDeleting, loopNum, period, text, toRotate]);
+  }, [isDeleting, loopNum, period, text]);
 
   useEffect(() => {
     let ticker = setInterval(() => {
