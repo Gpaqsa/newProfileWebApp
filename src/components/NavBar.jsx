@@ -4,6 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import navIcon1 from "../assets/image/nav-icon1.svg";
 import navIcon2 from "../assets/image/nav-icon2.svg";
 import navIcon3 from "../assets/image/nav-icon3.svg";
+import navIcon4 from "../assets/image/github-mark.png";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -83,6 +84,9 @@ const NavBar = () => {
                   </a>
                   <a href="www.google.com">
                     <img src={navIcon3} alt="" />
+                  </a>
+                  <a href="https://github.com/Gpaqsa">
+                    <img src={navIcon4} alt="" />
                   </a>
                 </div>
                 <HashLink to="#connect">
